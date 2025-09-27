@@ -127,7 +127,7 @@ local function createGUI()
                     end
                     -- Ragdoll Fly TP
                     local distance = (humanoidRootPart.Position - targetPos).Magnitude
-                    local flyTime = math.max(1, distance / 500) -- 1-3 сек, скорость ~25 studs/sec
+                    local flyTime = math.max(10, distance / 500) -- 1-3 сек, скорость ~25 studs/sec
                     humanoid.PlatformStand = true -- Ragdoll эффект
                     toggleNoclip(true) -- Noclip для прохождения стен
                     local bodyVelocity = Instance.new("BodyVelocity")
